@@ -1,19 +1,18 @@
 import matplotlib.pyplot as plt
-
 from random_walk import RandomWalk
 
 # Keep making new walks, as long as the program is active.
 while True:
     # Make a random walk.
-    rw = RandomWalk(50_000)
+    rw = RandomWalk(5000)
     rw.fill_walk()
 
     # Plot the points in the walk
     plt.style.use('classic')
     fig, ax = plt.subplots(figsize=(10, 6), dpi=128)
-    point_numbers = range(rw.num_points)
-    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Purples,
-               edgecolors='none', s=1)
+
+    # Plot the path of the walk
+    ax.plot(rw.x_values, rw.y_values, linewidth=1, zorder=1)
     ax.set_aspect('equal')
 
     # Emphasize the first and last points.
@@ -27,10 +26,8 @@ while True:
     # Print plot to screen
     # plt.show()
     # Save plot to file.
-    plt.savefig('random_walk_purples.png', bbox_inches='tight')
+    plt.savefig('15-3_molecular_motion.png', bbox_inches='tight')
 
     keep_running = input("Make another walk? (y/n): ")
     if keep_running == 'n':
         break
-
-
