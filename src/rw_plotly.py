@@ -1,0 +1,24 @@
+# Exercise 15.10: Practicing with Both Libraries (Plotly Random Walk)
+import plotly.graph_objects as go
+import numpy as np
+
+l = 1000
+x_steps = np.random.choice([-1, 1], size=l) + 0.2 * np.random.randn(l) # l steps
+y_steps = np.random.choice([-1, 1], size=l) + 0.2 * np.random.randn(l) # l steps
+x_position = np.cumsum(x_steps) # Integrate the position by summing steps values
+y_position = np.cumsum(y_steps) # Integrate the position by summing steps values
+
+fig = go.Figure(data=go.Scatter(
+    x=x_position,
+    y=y_position,
+    mode='markers',
+    name='Random Walk',
+    marker=dict(
+         color=np.arange(l),
+        size=8,
+        colorscale='Greens',
+        showscale=True
+    )
+))
+
+fig.show()
