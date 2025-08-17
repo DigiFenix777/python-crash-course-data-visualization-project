@@ -1,4 +1,4 @@
-# Exercise 15-4 Modified Random Walks
+# Exercise 15-4, 15-5 Modified Random Walks
 from random import choice
 
 

@@ -24,9 +24,9 @@ while True:
     ax.get_yaxis().set_visible(False)
 
     # Print plot to screen
-    # plt.show()
+    plt.show()
     # Save plot to file.
-    plt.savefig('15-3_molecular_motion.png', bbox_inches='tight')
+    # plt.savefig('15-3_molecular_motion.png', bbox_inches='tight')
 
     keep_running = input("Make another walk? (y/n): ")
     if keep_running == 'n':

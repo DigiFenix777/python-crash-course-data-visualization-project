@@ -23,5 +23,5 @@ fig = px.bar(x=poss_results, y=frequencies, title=title, labels=labels)
 # Further customize chart.
 fig.update_layout(xaxis_dtick=1)
 
-fig.show()
+# fig.show()
 # fig.write_html('../html/dice_visual_2d8.html', '')
