@@ -19,5 +19,5 @@ ax.tick_params(labelsize=14)
 ax.axis([0, 6_000, 0, 140_000_000_000])
 ax.ticklabel_format(style='plain')
 
-# plt.show()
-plt.savefig('cubes_plot.png', bbox_inches='tight')
+plt.show()
+# plt.savefig('cubes_plot.png', bbox_inches='tight')
