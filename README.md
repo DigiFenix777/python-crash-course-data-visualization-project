@@ -168,7 +168,7 @@ Exercises and examples adapted from Python Crash Course, 3rd Edition by Eric Mat
 
 Based on exercises from:
 Matthes, E. (2023). Python Crash Course (3rd ed.). No Starch Press.
-Book website
+[Book website](https://nostarch.com/python-crash-course-3rd-edition)
 
 ---
 
